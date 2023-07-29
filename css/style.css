@@ -1,0 +1,354 @@
+@import url(reset.css);
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    background: #F5F5F5;
+    color: #161616;
+    font-size: 18px;
+}
+
+.container {
+    max-width: 1140px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.header{
+    background: #81A36B;
+    padding: 20px 0 19px;
+}
+
+.menu {
+    display: flex;
+    gap: 90px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #161616;
+}
+
+.amelia_flowers {
+    flex: 1 1 50%;
+}
+
+.amelia_flowers h1 {
+    font-family: 'vetrino';
+    font-size: 62px;
+}
+
+.image_flowers {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    height: 670px;
+    flex: 1 1 50%;
+}
+
+.text_af {
+    padding: 60px 0 40px 0;
+    line-height: 30px;
+}
+
+.button button {
+    padding: 20px 30px;
+    font-size: 18px;
+    font-weight: 400;
+    display: inline-block;
+    color: #161616;
+}
+
+#submit1:hover {
+    cursor: pointer;
+}
+
+#submit2:hover {
+    cursor: pointer;
+}
+
+.button button:first-child {
+    background: #81A36B;
+    border: none;
+}
+
+.button button + button {
+    margin-left: 65px;
+    border: 1px solid #81A36B;
+    background: none;
+}
+
+.section_2 {
+    padding: 120px 0;
+}
+
+.aboutus {
+    text-align: center;
+    max-width: 540px;
+    margin: 0 auto;
+}
+
+.aboutus h2 {
+    font-family: 'vetrino';
+    font-size: 32px;
+}
+
+.aboutus p {
+    margin-top: 60px;
+    line-height: 30px;
+}
+
+.section_3 {
+    background: #81A36B;
+    padding: 80px 0;
+}
+
+.strengths img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+}
+
+.strengths p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    line-height: 22px;
+    text-align: center;
+}
+
+.section_4 {
+    padding: 120px 0;
+}
+
+.wework {
+    flex: 1 1 50%;
+}
+
+.wework img {
+    height: 560px;
+}
+
+.howwework {
+    text-align: center;
+    flex: 1 1 50%;
+}
+
+.howwework h2 {
+    font-family: 'vetrino';
+    font-size: 32px;
+}
+
+.howwework p {
+    margin-top: 60px;
+    text-align: left;
+    line-height: 30px;
+}
+
+.ourwork {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.ourwork h2 {
+    font-family: 'vetrino';
+    font-size: 32px;
+}
+
+.container__flex, .section_cards{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.section_cards{
+    flex-wrap: wrap;
+}
+
+.img_ourwork {
+    padding: 15px 15px 60px 15px;
+    background: #81A36B;
+    text-align: center;
+    flex: 1 1 30%;
+}
+
+.img_ourwork img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.img_ourwork > p {
+    margin-top: 23px ;
+}
+
+.footer {
+    background: #81A36B;
+    padding: 60px 0;
+    margin-top: 120px;
+}
+
+.flex_container  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex_container_footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex_container_footer h3 {
+    font-size: 24px;
+    line-height: 26px;
+    margin-bottom: 40px;
+}
+
+.footer_contact a {
+    text-decoration: none;
+    color: #161616;
+    display: inline-block;
+}
+
+.footer__social ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer_icon {
+    width: 22px;
+    height: 22px;
+}
+
+.footer_contact ul > li + li {
+    margin-top: 20px;
+}
+
+.footer_year {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    margin-top: 40px;
+}
+
+
+
+@media screen and (max-width: 1140px) {
+    body {
+        font-size: 16px;
+    }
+    .menu {
+        gap: 40px;
+    }
+    .img_ourwork {
+        flex: 1 1 20%;
+    }
+    .flex_container {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px; 
+    }
+    .strengths {
+        flex: 0 0 20%;
+    }
+    .wework {
+    flex: none;
+    max-width: 400px;
+    width: 100%;
+    }
+    .amelia_flowers {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .menu {
+        display: none;
+    }
+    .img_ourwork {
+        flex: 0 1 40%;
+    }
+}
+
+@media screen and (max-width: 1010px) {
+    .container__flex {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .section_2, 
+    .section_4, 
+    .section_3 {
+        padding: 30px 0;
+    }
+    .footer {
+        margin-top: 30px;
+    }
+    .ourwork {
+        margin-bottom: 20px;
+    }
+    .image_flowers {
+        flex: none;
+        max-width: 400px;
+        width: 100%;
+    }
+    .amelia_flowers {
+        margin-top: 20px;
+    }
+    .button {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+    .button button {
+        font-size: 14px;
+        min-width: 190px;
+    }
+    .button button + button {
+        margin-left: 0;
+    }
+    .howwework p {
+        text-align: center;
+        margin-top: 20px;
+    }
+    .aboutus p {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .amelia_flowers {
+        flex: none;
+        max-width: 400px;
+        width: 100%;
+    }
+    .img_ourwork {
+        flex: 0 1 70%;
+    }
+    .footer__logo {
+        order: 1;
+    }
+    .footer_contact {
+        order: 2;
+    }
+    .flex_container_footer h3 {
+        margin-bottom: 20px;
+    }
+    .footer__social {
+        order: 3;
+    }
+    .flex_container_footer div {
+        flex: 0 1 100%;
+        text-align: center;
+    }
+    .flex_container_footer {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 50px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .strengths {
+    flex: 0 0 100%;
+    }
+}
